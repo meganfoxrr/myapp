@@ -1,0 +1,71 @@
+
+<html>
+
+<head>
+    <title>Welcome to the Twitter Control Page!</title>
+    <h1>Welcome!</h1>
+    <h2>Please select from the following options:</h2>
+</head>
+
+<!-- Sets background color of home page to lavender -->
+<body style="background-color:Lavender;">
+
+    <!-- Button for getting all tweets -->
+    <form name="getTweets" action="/getTweets" method="post">
+        <button type = "submit" name = "submit">Get all Tweets</button>
+    </form>
+
+    <!-- Button for getting all IDs -->
+    <form name="getUserIDs" action="/getIDs" method="post">
+        <button type = "submit" name = "submit2">Get all User IDs</button>
+    </form>
+
+    <!-- Creates input for ID and button to submit -->
+    <form name = "getDetails" action="/getTweetDetails" method="post">
+        <input type="text" name="tweetID" 
+            placeholder="Enter tweet ID">
+              
+        <button type="submit" name="submit3">
+            Get Tweet
+        </button>
+    </form>
+
+    <!-- Created inputs for tweet text and ID and a button to submit -->
+    <form name = "createTweet" action="/createTweet" method="post">
+        <input type="text" name="tweetText"
+            placeholder="Enter tweet text">
+        <input type="text" name="ID"
+            placeholder="Enter tweet ID">
+
+        <button type="submit" name="submit4">
+            Create Tweet
+        </button>
+    </form>
+
+    <!-- Creates inputs for name text and screen name text and a button to submit -->
+    <form name = "updateScreenName" action="/updateScreenName" method="post">
+        <input type="text" name ="name"
+            placeholder="Enter name">
+        <input type="text" name="newScreenName"
+            placeholder="Enter new screen name">
+
+        <button type = "submit" name="submit5">
+            Change Screen Name
+        </button>
+    </form>
+
+    <!-- Creates input for tweet ID and button to submit -->
+    <form name = "deleteTweet" action="/deleteTweet" method="post">
+        <input type="text" name ="tweetID"
+            placeholder="Enter tweet ID">
+
+        <button type = "submit" name="submit6">
+            Delete Tweet
+        </button>
+    </form>
+   
+</body>
+
+
+
+</html>
